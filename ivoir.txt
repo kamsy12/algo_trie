@@ -1,0 +1,17 @@
+Fonction triInsertion(arr)
+    n = longueur(arr)
+    
+    Pour i allant de 1 à n-1
+        élémentCourant = arr[i]
+        j = i - 1
+        
+        Tant que j >= 0 et arr[j] > élémentCourant
+            arr[j + 1] = arr[j]
+            j = j - 1
+        Fin Tant Que
+        
+        arr[j + 1] = élémentCourant
+    Fin Pour
+    
+    Retourner arr
+Fin Fonction
